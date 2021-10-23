@@ -1,13 +1,6 @@
-$primary-color: #635e5e;
-$accent-color: #ffa500;
-$text-color: #e5f1e5;
-
-// maps - like arrays in JS
-$font-weights: (
-    "regular": 400,
-    "medium": 500,
-    "bold": 700
-);
+// import 
+@import './reset/reset';
+@import './variables/variables';
 
 body {
     background: $primary-color;
@@ -18,8 +11,10 @@ body {
     width: 80%;
     margin: 0 auto;
     // & equals main, we don't need to use .main_paragraph
+    // interpolation
     #{&}__paragraph {
         font-weight: map-get($font-weights, bold);
+
         &:hover {
             color: pink;
         }
