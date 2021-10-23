@@ -1,6 +1,14 @@
 body {
   background: #635e5e;
-  color: #008000;
+  color: #e5f1e5;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main_paragraph {
   font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */

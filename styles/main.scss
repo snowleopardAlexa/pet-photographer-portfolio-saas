@@ -1,6 +1,6 @@
 $primary-color: #635e5e;
 $accent-color: #ffa500;
-$text-color: #008000;
+$text-color: #e5f1e5;
 
 // maps - like arrays in JS
 $font-weights: (
@@ -12,6 +12,16 @@ $font-weights: (
 body {
     background: $primary-color;
     color: $text-color;
-    font-weight: map-get($font-weights, bold);
 }
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+    // & equals main, we don't need to use .main_paragraph
+    &_paragraph {
+        font-weight: map-get($font-weights, bold);
+    }
+}
+
+
 
