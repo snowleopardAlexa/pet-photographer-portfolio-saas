@@ -2,6 +2,12 @@
 @import './reset/reset';
 @import './variables/variables';
 
+// functions - arguments inside
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
+
+
 body {
     background: $primary-color;
     color: $text-color;
@@ -13,7 +19,7 @@ body {
     // & equals main, we don't need to use .main_paragraph
     // interpolation
     #{&}__paragraph {
-        font-weight: map-get($font-weights, bold);
+        font-weight: weight(regular);
 
         &:hover {
             color: pink;
