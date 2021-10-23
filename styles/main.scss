@@ -18,8 +18,11 @@ body {
     width: 80%;
     margin: 0 auto;
     // & equals main, we don't need to use .main_paragraph
-    &_paragraph {
+    #{&}__paragraph {
         font-weight: map-get($font-weights, bold);
+        &:hover {
+            color: pink;
+        }
     }
 }
 
