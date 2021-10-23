@@ -23,13 +23,19 @@
     }
 }
 
+@mixin mobile {
+    @media(max-width: $mobile) {
+        @content;
+    }
+}
+
 body {
     background: $primary-color;
     color: $text-color;
 }
 
 .main {
-    @include flexCenter(column);
+    @include flexCenter(row);
     width: 80%;
     margin: 0 auto;
     // & equals main, we don't need to use .main_paragraph
@@ -40,6 +46,10 @@ body {
         &:hover {
             color: pink;
         }
+    }
+
+    @include mobile {
+        flex-direction: column;
     }
 }
 
