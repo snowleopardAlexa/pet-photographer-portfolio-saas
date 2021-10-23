@@ -15,13 +15,21 @@
     flex-direction: $direction;
 }
 
+// we can assign a boolean values to variables
+@mixin theme($light-theme: true) {
+    @if $light-theme {
+        background: lighten($primary-color, 100%);
+        color: darken($text-color, 100%);
+    }
+}
+
 body {
     background: $primary-color;
     color: $text-color;
 }
 
 .main {
-    @include flexCenter;
+    @include flexCenter(column);
     width: 80%;
     margin: 0 auto;
     // & equals main, we don't need to use .main_paragraph
@@ -34,6 +42,11 @@ body {
         }
     }
 }
+
+.light {
+    @include theme($light-theme: true);
+}
+
 
 
 
