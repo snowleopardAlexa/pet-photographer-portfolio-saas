@@ -1,0 +1,70 @@
+// import 
+@import './reset/reset';
+@import './variables/variables';
+
+// functions - arguments inside
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
+
+// mixins 
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+// we can assign a boolean values to variables
+@mixin theme($light-theme: true) {
+    @if $light-theme {
+        background: lighten($primary-color, 100%);
+        color: darken($text-color, 100%);
+    }
+}
+
+@mixin mobile {
+    @media(max-width: $mobile) {
+        @content;
+    }
+}
+
+body {
+    background: $primary-color;
+    color: $text-color;
+}
+
+.main {
+    @include flexCenter(row);
+    width: 80% - 40%;
+    margin: 0 auto;
+    // & equals main, we don't need to use .main_paragraph
+    // interpolation
+    #{&}__paragraph1 {
+        font-weight: weight(regular);
+
+        &:hover {
+            color: pink;
+        }
+    }
+
+    #{&}__paragraph2 {
+        @extend .main__paragraph1;
+
+        &:hover {
+            color: green;
+        }
+    }
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.light {
+    @include theme($light-theme: true);
+}
+
+
+
+
