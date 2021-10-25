@@ -36,15 +36,23 @@ body {
 
 .main {
     @include flexCenter(row);
-    width: 80%;
+    width: 80% - 40%;
     margin: 0 auto;
     // & equals main, we don't need to use .main_paragraph
     // interpolation
-    #{&}__paragraph {
+    #{&}__paragraph1 {
         font-weight: weight(regular);
 
         &:hover {
             color: pink;
+        }
+    }
+
+    #{&}__paragraph2 {
+        @extend .main__paragraph1;
+
+        &:hover {
+            color: green;
         }
     }
 
