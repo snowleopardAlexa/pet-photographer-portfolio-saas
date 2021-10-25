@@ -3,7 +3,7 @@
 
 body {
     background: $primary-color;
-    color: white;
+    color: set-text-color($primary-color);
     height: 100vh;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1;
@@ -14,8 +14,9 @@ h1, h2, h3 {
 }
 
 a {
-    color: white;
+    color: set-text-color($primary-color);
     text-decoration: none;
+    @include transition-ease;
 }
 
 header {
@@ -51,5 +52,5 @@ footer {
     right: 1rem;
     text-align: right;
     padding: 1rem;
-    color: rgb(245, 240, 240);
+    color: set-text-color($primary-color);
 }

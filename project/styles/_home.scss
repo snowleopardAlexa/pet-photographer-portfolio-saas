@@ -4,7 +4,23 @@
     overflow: hidden;
     align-items: center;
     text-align: center;
-    background: url('../img/pet1.jpg');
+    background: 
+      linear-gradient(
+          to right, rgba($primary-color, 0.9),
+          rgba($primary-color, 0.3)
+      ),
+    url('../img/pet1.jpg');
     background-size: cover;
+}
+
+&__name {
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    border-bottom: 2px solid set-text-color;
+
+    &__name {
+        font-size: 5rem;
+    }
 }
 
