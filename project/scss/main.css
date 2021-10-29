@@ -294,6 +294,10 @@
   margin-bottom: 2rem;
 }
 
+.projects img {
+  width: 50%;
+}
+
 body {
   background: #494949;
   color: white;
