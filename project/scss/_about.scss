@@ -18,15 +18,18 @@
 
     p {
         margin-bottom: 5rem;
+        font-size: 1.5rem;
       }
     }
 
    &__bio {
-       width: 80%;
+       width: 100%;
        text-align: center;
 
        .text-secondary {
+           padding-top: 1rem;
            padding-bottom: 1rem;
+           font-size: 4rem;
        }
    }
 

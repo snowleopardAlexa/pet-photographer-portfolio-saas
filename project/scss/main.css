@@ -209,15 +209,18 @@
 
 .about__bio-image p {
   margin-bottom: 5rem;
+  font-size: 1.5rem;
 }
 
 .about__bio {
-  width: 80%;
+  width: 100%;
   text-align: center;
 }
 
 .about__bio .text-secondary {
+  padding-top: 1rem;
   padding-bottom: 1rem;
+  font-size: 4rem;
 }
 
 .about .jobs {
