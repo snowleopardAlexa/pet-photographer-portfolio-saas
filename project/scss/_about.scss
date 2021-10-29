@@ -4,10 +4,11 @@
     &__bio-image {
         height: 70vh;
         width: 100%;
-        background: linear-gradient (
-            to right,
-            rgba($primary-color, 0.9),
-            rgba($primary-color, 0.3)
+        background: 
+        linear-gradient(
+          to right,
+          rgba($primary-color, 0.9),
+          rgba($primary-color, 0.3)
         ),
         url('../img/pet1.jpg') center top;
         background-size: cover;
@@ -59,5 +60,5 @@
       rotate(90deg)
       translate(-3rem, -5rem);
   }
-  
+
 }

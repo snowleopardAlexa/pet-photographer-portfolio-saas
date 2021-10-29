@@ -192,7 +192,8 @@
 .about__bio-image {
   height: 70vh;
   width: 100%;
-  background: linear-gradient to right, rgba(73, 73, 73, 0.9), rgba(73, 73, 73, 0.3), url("../img/pet1.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(73, 73, 73, 0.9)), to(rgba(73, 73, 73, 0.3))), url("../img/pet1.jpg") center top;
+  background: linear-gradient(to right, rgba(73, 73, 73, 0.9), rgba(73, 73, 73, 0.3)), url("../img/pet1.jpg") center top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
