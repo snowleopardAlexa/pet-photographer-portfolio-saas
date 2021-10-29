@@ -192,8 +192,7 @@
 .about__bio-image {
   height: 70vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(73, 73, 73, 0.9)), to(rgba(73, 73, 73, 0.3))), url("../img/pet1.jpg") center top;
-  background: linear-gradient(to right, rgba(73, 73, 73, 0.9), rgba(73, 73, 73, 0.3)), url("../img/pet1.jpg") center top;
+  background: linear-gradient to right, rgba(73, 73, 73, 0.9), rgba(73, 73, 73, 0.3), url("../img/pet1.jpg") center top;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -214,6 +213,34 @@
 .about__bio {
   width: 80%;
   text-align: center;
+}
+
+.about__bio .text-secondary {
+  padding-bottom: 1rem;
+}
+
+.about .jobs {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.about__job {
+  background: #636363;
+  padding: 0.5rem;
+  border-bottom: 5px solid #dd9611;
+}
+
+.about__job h2, .about__job h3 {
+  margin: 0.5rem 0;
+}
+
+.about__job h6 {
+  margin: 0.3rem 0;
 }
 
 body {
