@@ -235,8 +235,12 @@
 
 .about .jobs__job {
   background: #636363;
-  padding: 0.5rem;
+  padding: 3.5rem;
   border-bottom: 5px solid #dd9611;
+}
+
+.about .jobs__job h2 {
+  font-size: 2rem;
 }
 
 .about .jobs__job h2, .about .jobs__job h3 {
@@ -249,7 +253,6 @@
 }
 
 .about .social-icons {
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,9 +262,9 @@
           flex-direction: column;
 }
 
-.about footer {
-  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
-          transform: rotate(90deg) translate(-3rem, -5rem);
+.about .footer {
+  margin-top: 2rem;
+  text-align: center;
 }
 
 body {
