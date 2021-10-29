@@ -208,7 +208,7 @@
 }
 
 .about__bio-image p {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .about__bio {
@@ -234,14 +234,6 @@
   background: #636363;
   padding: 0.5rem;
   border-bottom: 5px solid #dd9611;
-}
-
-.about__job h2, .about__job h3 {
-  margin: 0.5rem 0;
-}
-
-.about__job h6 {
-  margin: 0.3rem 0;
 }
 
 .about .social-icons {
