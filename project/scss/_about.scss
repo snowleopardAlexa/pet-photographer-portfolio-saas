@@ -1,0 +1,75 @@
+.about {
+    padding-bottom: 2rem;
+
+    &__bio-image {
+        height: 70vh;
+        width: 100%;
+        background: 
+        linear-gradient(
+          to right,
+          rgba($primary-color, 0.9),
+          rgba($primary-color, 0.3)
+        ),
+        url('../img/pet1.jpg') center top;
+        background-size: cover;
+        display: flex;
+        flex-direction: center;
+        justify-content: flex-end;
+
+    p {
+        margin-bottom: 5rem;
+        font-size: 1.5rem;
+      }
+    }
+
+ 
+    &__bio {
+        width: 100%;
+        text-align: center;
+ 
+        .text-secondary {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            font-size: 4rem;
+        }
+      }
+
+   .jobs {
+    width: 60vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+
+    &__job {
+      background: lighten($primary-color, 10%);
+      padding: 3.5rem;
+      border-bottom: 5px solid $secondary-color;
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      h2, h3 {
+        margin: 0.5rem 0;
+      }
+
+      h4 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .footer {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+}
