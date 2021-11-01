@@ -1,3 +1,13 @@
+  // SMALL 
+
+  @include media-sm {
+    .home {
+      &__name {
+          font-size: 3rem;
+        }
+    }
+  }
+
 // MEDIUM 
 
 @include media-md {
@@ -79,5 +89,4 @@
     .about__bio-image {
         height: 100vh;
     }  
-    
   }
