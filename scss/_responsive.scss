@@ -6,7 +6,38 @@
           font-size: 3rem;
         }
     }
+
+    .about {
+      &__bio {
+        .text-secondary {
+            padding-top: 6rem;
+            padding-bottom: 1rem;
+            font-size: 3rem;
+        }
+      }
+   }
+
+   .projects {
+    .text-secondary {
+        font-size: 3rem;
+     }
+   }
+
+   .contact {  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+      font-size: 1.2rem;
+    }
+   }
   }
+
 
 // MEDIUM 
 
