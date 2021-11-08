@@ -1,1 +1,1 @@
-This is large learn sass project. 
+This is Aleksandra Pet Photographer Portolio made with SaaS. 
